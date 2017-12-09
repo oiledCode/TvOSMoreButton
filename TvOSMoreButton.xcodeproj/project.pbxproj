@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4139B2F6A84FDCEC8DB008CB /* Pods_TvOSMoreButtonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974F5A621D01DCDBC0668BC7 /* Pods_TvOSMoreButtonTests.framework */; };
 		EB52FF2C1DBCF6AA00F97D2B /* BundleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52FF2B1DBCF6AA00F97D2B /* BundleLoader.swift */; };
 		EB76C5B01DB5873B0014B8D5 /* TvOSMoreButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB76C5A61DB5873B0014B8D5 /* TvOSMoreButton.framework */; };
 		EB88B1FE1E86F6EC00CBAB27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB88B2001E86F6EC00CBAB27 /* Localizable.strings */; };
@@ -15,6 +16,7 @@
 		EBA699201DB938C700D1818C /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA699161DB938C700D1818C /* UIView+Autolayout.swift */; };
 		EBA699221DB938C700D1818C /* TvOSMoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA6991B1DB938C700D1818C /* TvOSMoreButton.swift */; };
 		EBA699281DB93A5A00D1818C /* TvOSMoreButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA699101DB938C700D1818C /* TvOSMoreButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBF6550C1FDC26BD0093BBEB /* Tests_StringTruncation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6550A1FDC26560093BBEB /* Tests_StringTruncation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A8C79F674E9F40676C63C75 /* Pods-TvOSMoreButtonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvOSMoreButtonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TvOSMoreButtonTests/Pods-TvOSMoreButtonTests.release.xcconfig"; sourceTree = "<group>"; };
+		79F1C6EDD83BD69A4975A1F1 /* Pods-TvOSMoreButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvOSMoreButtonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TvOSMoreButtonTests/Pods-TvOSMoreButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		974F5A621D01DCDBC0668BC7 /* Pods_TvOSMoreButtonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TvOSMoreButtonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB52FF2B1DBCF6AA00F97D2B /* BundleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleLoader.swift; sourceTree = "<group>"; };
 		EB76C5A61DB5873B0014B8D5 /* TvOSMoreButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TvOSMoreButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB76C5AF1DB5873B0014B8D5 /* TvOSMoreButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TvOSMoreButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +53,7 @@
 		EBAD63A61EAD71E50007B48B /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EBAD63A71EAD72210007B48B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EBAD63A81EAD72B00007B48B /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EBF6550A1FDC26560093BBEB /* Tests_StringTruncation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_StringTruncation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +69,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB76C5B01DB5873B0014B8D5 /* TvOSMoreButton.framework in Frameworks */,
+				4139B2F6A84FDCEC8DB008CB /* Pods_TvOSMoreButtonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7536886C809433B0FAB4A48D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				974F5A621D01DCDBC0668BC7 /* Pods_TvOSMoreButtonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB76C59C1DB5873B0014B8D5 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +91,8 @@
 				EBA699231DB938D100D1818C /* Tests */,
 				EBA6990E1DB938C700D1818C /* Resources */,
 				EB76C5A71DB5873B0014B8D5 /* Products */,
+				F9FE01A8DE5BB2C9FAE4C587 /* Pods */,
+				7536886C809433B0FAB4A48D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,8 +163,18 @@
 			isa = PBXGroup;
 			children = (
 				EBA699251DB938D100D1818C /* Info.plist */,
+				EBF6550A1FDC26560093BBEB /* Tests_StringTruncation.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F9FE01A8DE5BB2C9FAE4C587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79F1C6EDD83BD69A4975A1F1 /* Pods-TvOSMoreButtonTests.debug.xcconfig */,
+				4A8C79F674E9F40676C63C75 /* Pods-TvOSMoreButtonTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,10 +214,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB76C5BD1DB5873B0014B8D5 /* Build configuration list for PBXNativeTarget "TvOSMoreButtonTests" */;
 			buildPhases = (
+				506CD344E51C2BF86D063CCB /* [CP] Check Pods Manifest.lock */,
 				EBEACC9D1E7158A20075CBD3 /* [TvOSMoreButton] Linter */,
 				EB76C5AB1DB5873B0014B8D5 /* Sources */,
 				EB76C5AC1DB5873B0014B8D5 /* Frameworks */,
 				EB76C5AD1DB5873B0014B8D5 /* Resources */,
+				9C2E09BFF48235B3635F1678 /* [CP] Embed Pods Frameworks */,
+				767029BE220C0BF9B8AB1F52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +300,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		506CD344E51C2BF86D063CCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TvOSMoreButtonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		767029BE220C0BF9B8AB1F52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvOSMoreButtonTests/Pods-TvOSMoreButtonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C2E09BFF48235B3635F1678 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TvOSMoreButtonTests/Pods-TvOSMoreButtonTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Snap.swift/Snap_swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Snap_swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvOSMoreButtonTests/Pods-TvOSMoreButtonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBEACC9C1E7158690075CBD3 /* [TvOSMoreButton] Linter */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF6550C1FDC26BD0093BBEB /* Tests_StringTruncation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,8 +591,9 @@
 		};
 		EB76C5BE1DB5873B0014B8D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F1C6EDD83BD69A4975A1F1 /* Pods-TvOSMoreButtonTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -518,19 +601,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgoldsby.TvOSMoreButtonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		EB76C5BF1DB5873B0014B8D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8C79F674E9F40676C63C75 /* Pods-TvOSMoreButtonTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgoldsby.TvOSMoreButtonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -11,3 +11,6 @@ excluded:
 
 colon:
   apply_to_dictionaries: false
+
+type_name:
+  excluded: Tests_StringTruncation
