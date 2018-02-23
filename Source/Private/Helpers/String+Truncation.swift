@@ -29,8 +29,8 @@ extension String {
     func truncateToSize(size: CGSize,
                         ellipsesString: String,
                         trailingText: String,
-                        attributes: [NSAttributedStringKey : Any],
-                        trailingTextAttributes: [NSAttributedStringKey : Any]) -> NSAttributedString {
+                        attributes: [String : Any],
+                        trailingTextAttributes: [String: Any]) -> NSAttributedString {
 
         if !willFit(to: size, attributes: attributes) {
             let indexOfLastCharacterThatFits = indexThatFits(size: size,
@@ -56,7 +56,7 @@ extension String {
     func willFit(to size: CGSize,
                  ellipsesString: String = "",
                  trailingText: String = "",
-                 attributes: [NSAttributedStringKey : Any]) -> Bool {
+                 attributes: [String : Any]) -> Bool {
 
         let text = (self + ellipsesString + trailingText) as NSString
         let boundedSize = CGSize(width: size.width, height: .greatestFiniteMagnitude)
@@ -70,7 +70,7 @@ extension String {
     private func indexThatFits(size: CGSize,
                                ellipsesString: String,
                                trailingText: String,
-                               attributes: [NSAttributedStringKey : Any],
+                               attributes: [String : Any],
                                minIndex: Int,
                                maxIndex: Int) -> Int {
 
@@ -80,7 +80,7 @@ extension String {
         let range = startIndex..<index(startIndex, offsetBy: midIndex)
         let substring = String(self[range])
 
-        if !substring.willFit(to: size, ellipsesString: ellipsesString, trailingText: trailingText, attributes: attributes) {
+        if !(substring?.willFit(to: size, ellipsesString: ellipsesString, trailingText: trailingText, attributes: attributes))! {
             return indexThatFits(size: size,
                                  ellipsesString: ellipsesString,
                                  trailingText: trailingText,

@@ -52,8 +52,8 @@ open class TvOSMoreButton: UIView {
         }
     }
 
-    @objc open var ellipsesString = String.TvOSMoreButton.ellipses.🌍
-    @objc open var trailingText = String.TvOSMoreButton.more.🌍
+    @objc open var ellipsesString = String.TvOSMoreButton.Ellipses.world
+    @objc open var trailingText = String.TvOSMoreButton.More.world
     @objc open var trailingTextColor = UIColor.black.withAlphaComponent(0.5)
     @objc open var trailingTextFont = UIFont.boldSystemFont(ofSize: 18)
     @objc open var pressAnimationDuration = 0.1
@@ -67,17 +67,17 @@ open class TvOSMoreButton: UIView {
     @objc open var focusedViewAlpha = CGFloat(0.75)
     @objc open var buttonWasPressed: ((String?) -> Void)?
 
-    private var textAttributes: [NSAttributedStringKey : Any] {
+    private var textAttributes: [String : Any] {
         return [
-            NSAttributedStringKey.foregroundColor: textColor,
-            NSAttributedStringKey.font: font
+            NSForegroundColorAttributeName: textColor,
+            NSFontAttributeName: font
         ]
     }
 
-    private var trailingTextAttributes: [NSAttributedStringKey : Any] {
+    private var trailingTextAttributes: [String : Any] {
         return [
-            NSAttributedStringKey.foregroundColor: trailingTextColor,
-            NSAttributedStringKey.font: trailingTextFont
+            NSForegroundColorAttributeName: trailingTextColor,
+            NSFontAttributeName: trailingTextFont
         ]
     }
 
@@ -225,6 +225,7 @@ open class TvOSMoreButton: UIView {
         layoutIfNeeded()
         let labelSize = label.bounds.size
         let trailingText = " " + self.trailingText
+
         label.attributedText = text.truncateToSize(size: labelSize,
                                                    ellipsesString: ellipsesString,
                                                    trailingText: trailingText,

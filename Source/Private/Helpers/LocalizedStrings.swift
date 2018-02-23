@@ -23,18 +23,17 @@
 //
 
 import Foundation
-
 extension String {
 
     enum TvOSMoreButton {
-        case ellipses
-        case more
+        case Ellipses
+        case More
 
-        var 🌍: String {
+        var world: String {
             switch self {
-            case .ellipses:
+            case .Ellipses:
                 return "…"
-            case .more:
+            case .More:
                 return NSLocalizedString(
                     "TvOSMoreButton.More.Text",
                     bundle: BundleLoader.main,
